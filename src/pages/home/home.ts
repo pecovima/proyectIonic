@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import { AlertController,NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +8,9 @@ import { AlertController } from 'ionic-angular';
 })
 export class HomePage {
 usuario : string="";
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController,
+  private NavParams: NavParams) {
 
   }
 
